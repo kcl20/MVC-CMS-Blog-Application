@@ -1,10 +1,8 @@
-// directory for routes under /api
-
 const router = require('express').Router();
-const blogpostRoute = require('./blogpostRoute');
-const dashboardRoute = require('./dashboardRoute');
+const userRoutes = require('./userRoutes');
+const projectRoutes = require('./projectRoutes');
 
-router.use('/post', blogpostRoute);
-router.use('/dashboard', dashboardRoute);
+router.use('/users', userRoutes);
+router.use('/projects', projectRoutes);
 
 module.exports = router;
