@@ -7,11 +7,6 @@ mysql -u root -p
 source db/schema.sql
 npm run seed
 
-
-
-
-
-
 Replaced JAWSDB_URL with BLOGDB_URL in connection.js
 
 
