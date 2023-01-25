@@ -1,0 +1,17 @@
+[
+  {
+    "description": "Striking article, great idea.",
+    "user_id": "1",
+    "blog_id": "1"
+  },
+  {
+    "description": "I wonder what the price will be.",
+    "user_id": "2",
+    "blog_id": "2"
+  },
+  {
+    "description": "It won't work, but I like the idea.",
+    "user_id": "3",
+    "blog_id": "3"
+  }
+]
