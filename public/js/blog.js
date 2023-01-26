@@ -29,9 +29,6 @@ const newCommentHandler = async (event) => {
 }
 
 
-
-
-
 document
 .querySelector('.new-blog-comment')
 .addEventListener('submit', newCommentHandler);
