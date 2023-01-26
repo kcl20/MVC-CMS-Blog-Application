@@ -14,7 +14,7 @@
     </form>
 
  {{#if comments.length}}
-  <div class="col-md-6 blog-list">
+  <div class="col-md-6 comment-list">
     <h3>Comments:</h3>
 
     {{#each comments as |comment|}}
@@ -28,7 +28,7 @@
         </h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{comment.id}}">DELETE</button>
+        <button id="delete-comment-button" class="btn btn-sm btn-danger" data-id="{{comment.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
