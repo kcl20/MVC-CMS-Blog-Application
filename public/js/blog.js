@@ -6,9 +6,9 @@ const newCommentHandler = async (event) => {
   let urlParts = blog_url.split('/');
   let blog_id = urlParts[urlParts.length - 1];
   console.log("button pressed");
-  console.log("url" + blog_url);
-  console.log("url parts " + urlParts);
-  console.log("blog id " + blog_id);
+  // console.log("url" + blog_url);
+  // console.log("url parts " + urlParts);
+  console.log("blog id: " + blog_id);
   console.log("comment: " + description);
 
   if (blog_id && description) {
@@ -21,7 +21,7 @@ const newCommentHandler = async (event) => {
       });
       if (response.ok) {
         // document.location.replace('/blog/${blog_id}');
-        console.log("Added comment: " + description);
+        console.log("Added comment.");
       } else {
         alert('Failed to create comment');
       }
