@@ -51,7 +51,7 @@ router.get('/blog/:id', async (req, res) => {
       });
     console.log(commentData);
     const comments = commentData.map((comment) => comment.get({ plain: true }));
-
+    console.log(comments);
     const blog = blogData.get({ plain: true });
 
     res.render('blog', {
