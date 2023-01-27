@@ -7,7 +7,7 @@ header, .blog:not(:last-child) {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #D9EAD3;
   text-decoration: none;
   font-size: 100%;
 }
@@ -17,8 +17,30 @@ header, .blog:not(:last-child) {
   text-decoration: underline;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.top-banner {
+  background: #231010;
+  color: #D9EAD3;
+  padding: 10px;
+  text-align: left;
+  
 }
+
+
+a {
+  color: #231010;
+}
+
+.title {
+  color: #231010;
+  background: #D9EAD3;
+  padding: 10px;
+}
+
+.body {
+  background: #D9EAD3;
+}
+
+header {
+  border-bottom: none;
+}
+
