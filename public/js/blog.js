@@ -2,6 +2,11 @@ const blog_url = window.location.href;
   let urlParts = blog_url.split('/');
   let blog_id = urlParts[urlParts.length - 1];
 
+
+
+
+
+
 const newCommentHandler = async (event) => {
   event.preventDefault();
   const description = document.querySelector('#blog-comment').value.trim();
@@ -26,6 +31,8 @@ const newCommentHandler = async (event) => {
       if (response.ok) {
         // document.location.replace('/blog/${blog_id}');
         console.log("Added comment.");
+        console.log(response);
+        document.location.replace(`/blog/${blog_id}`);
       } else {
         alert('Failed to create comment');
       }
@@ -48,15 +55,13 @@ const delButtonHandler = async (event) => {
       console.log(response);
       document.location.replace(`/blog/${blog_id}`);
     } else {
-      alert('Failed to delete comment');
+      alert('You can only delete your own comments.');
     }
   }
 };
 
 
-document
-  .querySelector('.comment-list')
-  .addEventListener('click', delButtonHandler);
+
 
 
 
@@ -64,3 +69,6 @@ document
 .querySelector('.new-blog-comment')
 .addEventListener('submit', newCommentHandler);
 
+document
+  .querySelector('.comment-list')
+  .addEventListener('click', delButtonHandler);
